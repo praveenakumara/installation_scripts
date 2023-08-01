@@ -32,7 +32,7 @@ kubectl version -o yaml
 
 
 echo "Start the minikube"
-minikube start 
+minikube start --driver=docker --force
 minikube status
 
 
