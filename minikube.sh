@@ -32,6 +32,8 @@ kubectl version -o yaml
 
 
 echo "Start the minikube"
+apt install conntrack
+apt install critcl
 minikube start --driver=docker --force
 minikube status
 
